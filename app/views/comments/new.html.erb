@@ -3,20 +3,7 @@
     <h2>つぶやき新規登録</h2>
   </header>
   <body>
-    <%= form_with(model: @comment, local: true, url: confirm_comments_path) do |form| %>
-    <div class="field_form">
-      <div>
-        <%= form.label :"つぶやき内容"%>
-      </div>
-      <div>
-        <%= form.text_area :content %>
-      </div>
-    </div>
-    <div>
-      <%= form.submit %>
-    </div>
-    <%= link_to "つぶやき一覧へ", comments_path %>
-    <% end %>
+    <%= render 'form' %>
   </body>
   <footer>
 
