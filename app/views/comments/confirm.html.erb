@@ -1,7 +1,7 @@
 <html>
   <header>
-    <h2>つぶやき内容 確認画面</h2>
-    <p>下記の内容で登録されます。</p>
+    <h2>つぶやき投稿 内容 確認画面</h2>
+    <p>下記の内容で投稿されます。<br>よろしければ「投稿」をクリックしてください。</p>
   </header>
   <body>
     <%= form_with(model: @comment, local: true) do |form| %>
@@ -15,7 +15,7 @@
     </div>
     <table>
       <tr>
-        <th>つぶやき内容</th>
+        <th>つぶやき投稿 内容</th>
       </tr>
       <tr>
         <td><%= @comment.content %></td>
@@ -23,13 +23,10 @@
     </table>
 
     <div>
-      <%= form.submit %>
+      <%= form.submit "投稿" %>
     </div>
     <div>
       <%= form.submit "戻る", name: 'back' %>
-    </div>
-    <div>
-      <%= link_to "つぶやき一覧へ", comments_path %>      
     </div>
     <% end %>
   </body>
