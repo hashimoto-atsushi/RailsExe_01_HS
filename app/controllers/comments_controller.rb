@@ -7,4 +7,10 @@ class CommentsController < ApplicationController
     @comment = Comment.new
   end
 
+  def create
+    @comment = Comment.new(content: params[:comment][:content])
+    @comment.save
+    redirect_to comments_path
+  end
+
 end

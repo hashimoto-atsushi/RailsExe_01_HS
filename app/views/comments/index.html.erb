@@ -9,11 +9,11 @@
         <th>つぶやき内容</th>
       </tr>
 
+      <% @comments.each do |comment| %>
       <tr>
-        <% @comments.each do |comment| %>
         <td><%= comment.content %></td>
-        <% end %>
       </tr>
+      <% end %>
 
 
     </table>
