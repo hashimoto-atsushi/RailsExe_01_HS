@@ -13,7 +13,7 @@
         <%= form.hidden_field :content %>
       </div>
     </div>
-    <table border="1">
+    <table>
       <tr>
         <th>つぶやき内容</th>
       </tr>
@@ -25,7 +25,12 @@
     <div>
       <%= form.submit %>
     </div>
-    <%= link_to "つぶやき一覧へ", comments_path %>
+    <div>
+      <%= form.submit "戻る", name: 'back' %>
+    </div>
+    <div>
+      <%= link_to "つぶやき一覧へ", comments_path %>      
+    </div>
     <% end %>
   </body>
   <footer>
