@@ -1,0 +1,24 @@
+<html>
+  <header>
+    <h2>新規登録</h2>
+  </header>
+  <body>
+    <%= form_with(model: @comment, local: true) do |form| %>
+    <div class="field_form">
+      <div>
+        <%= form.label :"つぶやき内容"%>
+      </div>
+      <div>
+        <%= form.text_area :content %>
+      </div>
+    </div>
+    <div>
+      <%= form.submit %>
+    </div>
+    <%= link_to "つぶやき一覧へ", comments_path %>
+    <% end %>
+  </body>
+  <footer>
+
+  </footer>
+</html>
