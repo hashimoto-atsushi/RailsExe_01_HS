@@ -12,6 +12,7 @@
       <% @comments.each do |comment| %>
       <tr>
         <td><%= comment.content %></td>
+        <td><%= link_to "削除", comment_path(comment.id), method: :delete, data: {confirm: "削除しても良いですか？"} %></td>
       </tr>
       <% end %>
 
