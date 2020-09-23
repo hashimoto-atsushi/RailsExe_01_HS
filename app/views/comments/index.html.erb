@@ -1,2 +1,28 @@
-<h1>Comments#index</h1>
-<p>Find me in app/views/comments/index.html.erb</p>
+<html>
+  <header>
+    <h2>つぶやき一覧</h2>
+  </header>
+  <body>
+    <%= form_with(model: @comment, local: true) do |form| %>
+    <table>
+      <tr>
+        <th>つぶやき内容</th>
+      </tr>
+
+      <tr>
+        <% @comments.each do |comment| %>
+        <td><%= comment.content %></td>
+        <% end %>
+      </tr>
+
+
+    </table>
+    <div>
+      <%= link_to "新規登録する", new_comment_path %>
+    </div>
+    <% end %>
+  </body>
+  <footer>
+
+  </footer>
+</html>
