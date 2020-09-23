@@ -7,6 +7,10 @@ class CommentsController < ApplicationController
     @comment = Comment.new
   end
 
+  def confirm
+    @comment = Comment.new(content: params[:comment][:content])
+  end
+
   def create
     @comment = Comment.new(content: params[:comment][:content])
     @comment.save

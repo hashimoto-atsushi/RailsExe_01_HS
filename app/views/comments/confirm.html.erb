@@ -1,0 +1,34 @@
+<html>
+  <header>
+    <h2>つぶやき内容 確認画面</h2>
+    <p>下記の内容で登録されます。</p>
+  </header>
+  <body>
+    <%= form_with(model: @comment, local: true) do |form| %>
+    <div class="field_form">
+      <div>
+        <%= form.hidden_field :"つぶやき内容"%>
+      </div>
+      <div>
+        <%= form.hidden_field :content %>
+      </div>
+    </div>
+    <table border="1">
+      <tr>
+        <th>つぶやき内容</th>
+      </tr>
+      <tr>
+        <td><%= @comment.content %></td>
+      </tr>
+    </table>
+
+    <div>
+      <%= form.submit %>
+    </div>
+    <%= link_to "つぶやき一覧へ", comments_path %>
+    <% end %>
+  </body>
+  <footer>
+
+  </footer>
+</html>
