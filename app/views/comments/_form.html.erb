@@ -1,14 +1,24 @@
 <%= form_with(model: @comment, local: true, url: choose_new_or_edit) do |form| %>
-<div class="field_form">
-  <div>
-    <%= form.label :"つぶやき内容"%>
+  <% if @comment.errors.any?%>
+  <div class="error_explanation">
+    <P><%= @comment.errors.count %>件のエラーメッセージがあります。</P>
+    <% @comment.errors.full_messages.each do |msg| %>
+    <ul>
+      <li><%= msg %></li>
+    </ul>
+    <% end %>
+  </div>
+  <% end %>
+  <div class="field_form">
+    <div>
+      <%= form.label :"つぶやき内容"%>
+    </div>
+    <div>
+      <%= form.text_area :content %>
+    </div>
   </div>
   <div>
-    <%= form.text_area :content %>
+    <%= form.submit %>
   </div>
-</div>
-<div>
-  <%= form.submit %>
-</div>
-<%= link_to "つぶやき一覧へ", comments_path %>
+  <%= link_to "つぶやき一覧へ", comments_path %>
 <% end %>
