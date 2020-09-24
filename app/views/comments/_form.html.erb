@@ -3,7 +3,7 @@
   <div class="error_explanation">
     <P><%= @comment.errors.count %>件のエラーメッセージがあります。</P>
     <% @comment.errors.full_messages.each do |msg| %>
-    <ul>
+    <ul class="error-lists">
       <li><%= msg %></li>
     </ul>
     <% end %>

@@ -148,3 +148,10 @@ td {
     width: 14rem;
     height: 3rem;
   }
+
+  .error-lists {
+    list-style: none;
+    text-align: center;
+    padding-right: 55px;
+
+  }
