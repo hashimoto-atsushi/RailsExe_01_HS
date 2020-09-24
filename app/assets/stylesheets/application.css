@@ -68,10 +68,7 @@ table {
   background: #FFFFFF;
   border-collapse: collapse;
   width: 500px
-
 }
-
-
 
 th  {
   border: 1px solid;
@@ -96,7 +93,6 @@ td {
     background-color: #FFDDFF;
   }
 
-
   #comment {
     font-size: 1rem;
     padding: 0px 10px;
@@ -114,7 +110,6 @@ td {
     margin: 0 auto;
     width: 1000px
     vertical-align: middle;
-
   }
 
   footer p {
@@ -131,14 +126,11 @@ td {
     text-align: center;
     display: block;
     margin: 0 auto;
-
-
   }
 
   .field_form h2 {
     padding-bottom: 10px;
   }
-
 
   .field_form p{
     font-size: 1rem;
@@ -153,5 +145,4 @@ td {
     list-style: none;
     text-align: center;
     padding-right: 55px;
-
   }
