@@ -13,3 +13,138 @@
  *= require_tree .
  *= require_self
  */
+
+
+.wrap {
+  font-family: sans-serif;
+}
+
+ .header-container{
+   height: 50px;
+   background-color: #FF82B2;
+   margin: 0 auto;
+   padding: 15px 20px 25px 20px;
+   width: 1000px
+   vertical-align: middle;
+ }
+
+ .header-container h1 {
+   font-size: 3.5rem;
+   color: #FFFFFF;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+
+ }
+
+ .main-container {
+   height: auto;
+   background-color: #FFFFF0;
+   margin: 0 auto;
+   padding: 30px 20px 10px 20px;
+   width: 1000px
+   vertical-align: middle;
+ }
+
+ .main-container h2{
+   font-size: 2rem;
+   padding-top: 7px;
+   padding-bottom: 20px;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+}
+
+.main-container p {
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  background: #FFFFFF;
+  border-collapse: collapse;
+  width: 500px
+
+}
+
+
+
+th  {
+  border: 1px solid;
+}
+
+td {
+  border: 1px solid;
+  text-align: center;
+}
+
+ .table {
+   height: 100px;
+   margin: 0 auto;
+   padding: 30px 20px 10px 20px;
+   width: 1000px
+   vertical-align: middle;
+
+}
+
+  .table th {
+    font-size: 1.2rem;
+    background-color: #FFDDFF;
+  }
+
+
+  #comment {
+    font-size: 1rem;
+    padding: 0px 10px;
+  }
+
+  .link p {
+    padding: 30px 20px 10px 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-container {
+    height: 50px;
+    background-color: #FF82B2;
+    margin: 0 auto;
+    width: 1000px
+    vertical-align: middle;
+
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    padding: 20px 20px 10px 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .field_form {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
+
+  }
+
+  .field_form h2 {
+    padding-bottom: 10px;
+  }
+
+
+  .field_form p{
+    font-size: 1rem;
+  }
+
+  .field_form textarea{
+    width: 14rem;
+    height: 3rem;
+  }

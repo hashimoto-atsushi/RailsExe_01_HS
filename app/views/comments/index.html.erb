@@ -1,30 +1,29 @@
-<html>
-  <header>
-    <h2>つぶやき一覧</h2>
+<section class="wrap">
+  <header class="header-container">
+    <h1>つ ぶ や こ う !</h1>
   </header>
-  <body>
+  <main class="main-container">
+    <h2>みんなのつぶやき 一覧</h2>
     <%= form_with(model: @comment, local: true) do |form| %>
-    <table>
+    <table class="table">
       <tr>
-        <th>つぶやき内容</th>
+        <th>つ ぶ や き</th>
+        <th colspan="2"></th>
       </tr>
-
       <% @comments.each do |comment| %>
       <tr>
-        <td><%= comment.content %></td>
+        <td id="comment"><%= comment.content %></td>
         <td><%= link_to "編集", edit_comment_path(comment.id), data: {confirm: "編集しても良いですか？"} %></td>
         <td><%= link_to "削除", comment_path(comment.id), method: :delete, data: {confirm: "削除しても良いですか？"} %></td>
       </tr>
       <% end %>
-
-
     </table>
-    <div>
-      <%= link_to "新規投稿をする", new_comment_path %>
+    <div class="link">
+      <P><%= link_to "新規投稿をする", new_comment_path %></P>
     </div>
     <% end %>
-  </body>
-  <footer>
-
+  </main>
+  <footer class="footer-container">
+    <p>ばびちゃんプロダクト</p>
   </footer>
-</html>
+</section>

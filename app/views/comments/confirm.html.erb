@@ -1,9 +1,9 @@
-<html>
-  <header>
-    <h2>つぶやき投稿 内容 確認画面</h2>
-    <p>下記の内容で投稿されます。<br>よろしければ「投稿」をクリックしてください。</p>
+<section class="wrap" >
+  <header class="header-container">
+    <h1>つぶやき投稿 内容 確認画面</h2>
   </header>
-  <body>
+  <main class="main-container">
+    <p>下記の内容で投稿されます。<br>よろしければ「投稿」をクリックしてください。</p>
     <%= form_with(model: @comment, local: true) do |form| %>
     <div class="field_form">
       <div>
@@ -13,24 +13,24 @@
         <%= form.hidden_field :content %>
       </div>
     </div>
-    <table>
+    <table class="table">
       <tr>
         <th>つぶやき投稿 内容</th>
       </tr>
       <tr>
-        <td><%= @comment.content %></td>
+        <td id="comment"><%= @comment.content %></td>
       </tr>
     </table>
 
-    <div>
-      <%= form.submit "投稿" %>
+    <div class="link">
+      <P><%= form.submit "投稿" %></P>
     </div>
-    <div>
-      <%= form.submit "戻る", name: 'back' %>
+    <div class="link">
+      <p><%= form.submit "戻る", name: 'back' %></p>
     </div>
     <% end %>
-  </body>
-  <footer>
-
+  </section>
+  <footer class="footer-container">
+    <p>ばびちゃんプロダクト</p>
   </footer>
-</html>
+</section>
